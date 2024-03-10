@@ -1,0 +1,43 @@
+﻿<Window x:Class="CalculatorWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculatorWPF"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        SizeToContent="WidthAndHeight"
+        Title="MainWindow">
+    <Grid Height="450" Width="400">
+        <StackPanel>
+            <Border Height="100" Margin="0,50,0,30" BorderThickness="1" BorderBrush="Black">
+                <StackPanel>
+                    <TextBlock x:Name="CalTxtBlck" Height="30"></TextBlock>
+                    <TextBlock x:Name="InputTxtBlck" Text="0" Height="70" FontSize="50" FlowDirection="RightToLeft" Padding="5,0,0,0"></TextBlock>
+                </StackPanel>
+            </Border>
+            <WrapPanel Margin="10,0,10,0">
+                <Button x:Name="Btn1" Style="{StaticResource NumBtnStyle}" Content="1" Click="Btn1_Click"/>
+                <Button x:Name="Btn2" Style="{StaticResource NumBtnStyle}" Content="2" Click="Btn2_Click"/>
+                <Button x:Name="Btn3" Style="{StaticResource NumBtnStyle}" Content="3" Click="Btn3_Click"/>
+                <Button x:Name="BtnDel" Style="{StaticResource FuncBtnStyle}" FontSize="15" Content="DEL"/>
+                <Button x:Name="BtnClear" Style="{StaticResource FuncBtnStyle}" Margin="5" Content="C" Click="BtnClear_Click"/>
+                <Button x:Name="Btn4" Style="{StaticResource NumBtnStyle}" Content="4" Click="Btn4_Click"/>
+                <Button x:Name="Btn5" Style="{StaticResource NumBtnStyle}" Content="5" Click="Btn5_Click"/>
+                <Button x:Name="Btn6" Style="{StaticResource NumBtnStyle}" Content="6" Click="Btn6_Click"/>
+                <Button x:Name="BtnPlus" Style="{StaticResource FuncBtnStyle}" Content="+"/>
+                <Button x:Name="BtnMinus" Style="{StaticResource FuncBtnStyle}" Content="-"/>
+                <Button x:Name="Btn7" Style="{StaticResource NumBtnStyle}" Content="7" Click="Btn7_Click"/>
+                <Button x:Name="Btn8" Style="{StaticResource NumBtnStyle}" Content="8" Click="Btn8_Click"/>
+                <Button x:Name="Btn9" Style="{StaticResource NumBtnStyle}" Content="9" Click="Btn9_Click"/>
+                <Button x:Name="BtnMult" Style="{StaticResource FuncBtnStyle}" Content="x"/>
+                <Button x:Name="BtnDivide" Style="{StaticResource FuncBtnStyle}" Content="/"/>
+                <Button x:Name="BtnSign" Style="{StaticResource NumBtnStyle}" Content="+/-"/>
+                <Button x:Name="Btn0" Style="{StaticResource NumBtnStyle}" Content="0" Click="Btn0_Click"/>
+                <Button x:Name="BtnPoint" Style="{StaticResource NumBtnStyle}" Content="."/>
+                <Button x:Name="BtnEqual" Style="{StaticResource NumBtnStyle}" Width="130" Content="="/>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>
